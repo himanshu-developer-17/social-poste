@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page {
+    width: min(100%, 947px);
+    height: 494px;
+    background: #bcccae;
+    border: 1px solid #777;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+header {
+    height: 44px;
+    background: #626e61;
+    border-bottom: 1px solid #c4c9bf;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 62px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.hero {
+    height: 450px;
+    display: flex;
+}
+
+.content {
+    width: 64.5%;
+    padding: 53px 50px 40px 62px;
+}
+
+.content h1 {
+    color: #596858;
+    font-size: 62px;
+    line-height: 1.15;
+    letter-spacing: -2px;
+    font-weight: 800;
+    margin-bottom: 22px;
+}
+
+.content p {
+    max-width: 445px;
+    color: #111;
+    font-size: 11px;
+    line-height: 1.7;
+    margin-bottom: 19px;
+}
+
+.content button {
+    border: 0;
+    background: #667365;
+    color: white;
+    padding: 11px 14px;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.visual {
+    position: relative;
+    width: 35.5%;
+    height: 450px;
+    background: #626e61;
+    overflow: visible;
+}
+
+.coffee-pouch {
+    position: absolute;
+    width: 500px;
+    
+    left: -250px;
+    top: 70px;
+    z-index: 3;
+
+    /* Hover effect */
+    transition: transform 0.45s ease;
+    transform-origin: center center;
+}
+
+.coffee-pouch:hover {
+    transform: scale(1.2);
+}
+
+.coffee-beans {
+    position: absolute;
+    width: 390px;
+    left: 75px;
+    top: 18px;
+    z-index: 2;
+    pointer-events: none;
+}
